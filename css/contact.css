@@ -1,0 +1,149 @@
+/* ===========================
+   GAME QUEST - contact.css
+=========================== */
+
+.contact-section {
+  padding: 3rem 2rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1.8rem;
+  align-items: start;
+}
+
+/* Form */
+.contact-form-wrap {
+  background: #fff;
+  border: 2px solid #1a1a1a;
+  border-radius: 14px;
+  padding: 1.8rem;
+  box-shadow: 4px 4px 0 #1a1a1a;
+}
+
+.contact-form-wrap h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+
+.contact-form-wrap p.sub {
+  font-size: 0.85rem;
+  color: #6b21a8;
+  margin-bottom: 1.2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #1a1a1a;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  border: 2px solid #1a1a1a;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  background: #f3e8ff;
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #7e22ce;
+  box-shadow: 0 0 0 3px rgba(168,85,247,0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Info Card */
+.contact-info-card {
+  background: #ede9fe;
+  border: 2px solid #1a1a1a;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 4px 4px 0 #1a1a1a;
+  position: relative;
+}
+
+.contact-info-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-bottom: 0.9rem;
+}
+
+.info-item iconify-icon {
+  font-size: 1.3rem;
+  color: #7e22ce;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.info-item p {
+  font-size: 0.83rem;
+  color: #4b1d96;
+  line-height: 1.5;
+}
+
+.info-item .label {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #1a1a1a;
+}
+
+.contact-controller {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.contact-controller iconify-icon {
+  font-size: 4rem;
+  color: #7e22ce;
+}
+
+/* Toast / feedback */
+.toast {
+  display: none;
+  background: #7e22ce;
+  color: #fff;
+  border: 2px solid #1a1a1a;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  box-shadow: 3px 3px 0 #1a1a1a;
+}
+
+.toast.show {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

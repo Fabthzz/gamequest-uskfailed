@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Quest - Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/contact.css"/>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <iconify-icon icon="mdi:gamepad-variant" class="logo-icon"></iconify-icon>
+      <span><span class="game">GAME</span> <span class="quest">QUEST</span></span>
+    </div>
+    <button class="navbar-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="navbar-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="mission.html">Misi</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div style="max-width:1000px; margin:0 auto;">
+
+      <h1 class="section-title">Hubungi Kami 📩</h1>
+      <p class="section-subtitle">Punya pertanyaan atau saran? Hubungi Kami!</p>
+
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div class="contact-form-wrap">
+          <h2>Kirim Pesan</h2>
+          <p class="sub">Isi form di bawah ini dan kami akan segera membalasmu!</p>
+
+          <form id="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama..."/>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@contoh.com"/>
+            </div>
+
+            <div class="form-group">
+              <label for="pesan">Pesan</label>
+              <textarea id="pesan" name="pesan" placeholder="Tulis pesan di sini..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width:100%;">
+               Kirim Pesan
+            </button>
+
+            <div class="toast" id="toast"></div>
+
+          </form>
+        </div>
+
+        <!-- INFO CARD -->
+        <div class="contact-info-card">
+          <h3>Informasi Kontak</h3>
+
+          <div class="info-item">
+            <iconify-icon icon="mdi:map-marker"></iconify-icon>
+            <p>
+              <span class="label">Alamat</span><br/>
+              Jl. London City No. 123<br/>
+              Kepulauan Antartika, China
+            </p>
+          </div>
+
+          <div class="info-item">
+            <iconify-icon icon="mdi:email-outline"></iconify-icon>
+            <p>
+              <span class="label">Email</span><br/>
+              fabssy@gamequest.id
+            </p>
+          </div>
+
+          <div class="info-item">
+            <iconify-icon icon="mdi:phone"></iconify-icon>
+            <p>
+              <span class="label">Telepon</span><br/>
+              +62 877-2228-1041
+            </p>
+          </div>
+
+
+          <div class="contact-controller">
+            <iconify-icon icon="mdi:gamepad-variant-outline"></iconify-icon>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>⚔️ &copy; 2026 Game Quest - All Rights Reserved</p>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
