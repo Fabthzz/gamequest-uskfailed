@@ -52,7 +52,7 @@ img {
 .navbar {
   background: #d8b4fe;
   border-bottom: var(--border);
-  padding: 0.75rem 2rem;
+  padding: 1.1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

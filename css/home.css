@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  border-bottom: 2px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
 }
 
 .hero-bg {
@@ -26,7 +26,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(126,34,206,0.7) 0%, rgba(88,28,135,0.3) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
 
@@ -40,14 +40,14 @@
 .hero-content h1 {
   font-size: 2.8rem;
   font-weight: 800;
-  color: #fff;
+  color: #000000;
   line-height: 1.15;
   margin-bottom: 0.8rem;
   text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
 }
 
 .hero-content p {
-  color: #ede9fe;
+  color: #000000;
   font-size: 1rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;

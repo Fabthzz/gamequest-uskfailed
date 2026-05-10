@@ -1,0 +1,158 @@
+/* ===========================
+   GAME QUEST - about.css
+=========================== */
+
+.about-section {
+  padding: 3rem 2rem;
+  background-color: #f3e8ff;
+}
+
+.about-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ---- TOP GRID: teks kiri, karakter kanan ---- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.about-text h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+
+/* garis merah bawah judul */
+.about-underline {
+  width: 48px;
+  height: 4px;
+  background: #e11d48;
+  border-radius: 2px;
+  margin-bottom: 1.4rem;
+}
+
+.about-text p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #1a1a1a;
+  margin-bottom: 0.9rem;
+  max-width: 420px;
+}
+
+/* Pixel character */
+.about-character {
+  width: 260px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.about-character img {
+  width: 260px;
+  height: 300px;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+
+/* Garis bawah karakter */
+.about-character::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #7e22ce;
+  border-radius: 2px;
+}
+
+/* ---- STATS BAR ---- */
+.stats-bar {
+  background: #fff;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding:3rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  flex: 1;
+  text-align: center;
+}
+
+.stat-icon {
+  font-size: 5rem;
+  color: #7e22ce;
+  line-height: 1;
+}
+
+.stat-num {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #6b21a8;
+  font-weight: 500;
+}
+
+/* Garis pembatas vertikal */
+.stat-divider {
+  width: 2px;
+  height: 70px;
+  background: #e5e7eb;
+  flex-shrink: 0;
+  margin: 0 1rem;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-character {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-character img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-character::after {
+    display: none;
+  }
+
+  .stats-bar {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .stat-divider {
+    width: 60px;
+    height: 2px;
+    margin: 0;
+  }
+}
