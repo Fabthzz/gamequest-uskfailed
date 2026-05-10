@@ -1,0 +1,261 @@
+/* ===========================
+   GAME QUEST - main.css
+   Global styles & variables
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --purple-light: #e9d5ff;
+  --purple-soft: #d8b4fe;
+  --purple-main: #a855f7;
+  --purple-dark: #7e22ce;
+  --purple-bg: #f3e8ff;
+  --purple-card: #ede9fe;
+  --black: #1a1a1a;
+  --white: #fff;
+  --border: 2px solid #1a1a1a;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 4px 4px 0px #1a1a1a;
+  --shadow-sm: 2px 2px 0px #1a1a1a;
+  --font: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--purple-bg);
+  color: var(--black);
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+  background: #d8b4fe;
+  border-bottom: var(--border);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar-logo .logo-icon {
+  font-size: 1.6rem;
+  color: var(--purple-dark);
+}
+
+.navbar-logo span.game {
+  color: var(--black);
+  font-weight: 700;
+}
+
+.navbar-logo span.quest {
+  color: var(--purple-dark);
+  font-weight: 800;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.navbar-menu a {
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+  border: 2px solid transparent;
+}
+
+.navbar-menu a:hover {
+  background: var(--purple-main);
+  color: #fff;
+  border-color: var(--black);
+}
+
+.navbar-menu a.active {
+  background: var(--purple-dark);
+  color: #fff;
+  border: 2px solid var(--black);
+  font-weight: 600;
+}
+
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.navbar-hamburger span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: var(--black);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-primary {
+  background: var(--purple-dark);
+  color: #fff;
+  border: var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 24px;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px var(--black);
+}
+
+.btn-secondary {
+  background: var(--purple-soft);
+  color: var(--black);
+  border: var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 20px;
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px var(--black);
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card {
+  background: #fff;
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0px var(--black);
+}
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--black);
+  margin-bottom: 0.4rem;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: #6b21a8;
+  margin-bottom: 1.8rem;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer {
+  background: #d8b4fe;
+  border-top: var(--border);
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--purple-dark);
+  margin-top: 3rem;
+}
+
+/* ===========================
+   RESPONSIVE NAVBAR
+=========================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar-hamburger {
+    display: flex;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.3rem;
+    padding: 0.8rem 0;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .navbar-menu a {
+    width: 100%;
+    text-align: left;
+    padding: 8px 12px;
+  }
+}

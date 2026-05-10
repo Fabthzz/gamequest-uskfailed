@@ -5,7 +5,7 @@
 /* HERO SECTION */
 .hero {
   position: relative;
-  min-height: 420px;
+  height: 512px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -15,9 +15,10 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1400&q=80');
+  background-image: url('/assets/bg/castle.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   filter: brightness(0.55) saturate(1.2);
   z-index: 0;
 }
