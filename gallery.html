@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Quest - Galeri</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/gallery.css"/>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <iconify-icon icon="mdi:gamepad-variant" class="logo-icon"></iconify-icon>
+      <span><span class="game">GAME</span> <span class="quest">QUEST</span></span>
+    </div>
+    <button class="navbar-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="navbar-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="mission.html">Misi</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- GALLERY SECTION -->
+  <section class="gallery-section">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h1 class="section-title">Galeri Petualangan 🖼️</h1>
+      <p class="section-subtitle">Beberapa momen epic dari para petualang.</p>
+
+      <div class="gallery-grid">
+
+        <!-- Row 1 -->
+        <div class="gallery-item">
+          <img src="assets/bg/img/api.png" alt="Castle Fantasy"/>
+          <div class="overlay">
+            <iconify-icon icon="mdi:magnify-plus"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/bg/img/kristal.png" alt="Epic Adventure"/>
+          <div class="overlay">
+            <iconify-icon icon="mdi:magnify-plus"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/bg/img/piramid.png" alt="Mountain Quest"/>
+          <div class="overlay">
+            <iconify-icon icon="mdi:magnify-plus"></iconify-icon>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="gallery-item">
+          <img src="assets/bg/img/ruma.png" alt="Forest Dungeon"/>
+          <div class="overlay">
+            <iconify-icon icon="mdi:magnify-plus"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/bg/img/kapal.png" alt="Snowy Peak"/>
+          <div class="overlay">
+            <iconify-icon icon="mdi:magnify-plus"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/bg/img/melayang.png" alt="Ocean View"/>
+          <div class="overlay">
+            <iconify-icon icon="mdi:magnify-plus"></iconify-icon>
+          </div>
+        </div>
+
+        <!-- Row 3 - hidden by default, show on button click
+        <div class="gallery-item hidden-item" style="display:none;">
+          <img src="https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=600&q=80" alt="Desert Land"/>
+          <div class="overlay">
+            <iconify-icon icon="mdi:magnify-plus"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="gallery-item hidden-item" style="display:none;">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&q=80" alt="River Valley"/>
+          <div class="overlay">
+            <iconify-icon icon="mdi:magnify-plus"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="gallery-item hidden-item" style="display:none;">
+          <img src="https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?w=600&q=80" alt="Sky Island"/>
+          <div class="overlay">
+            <iconify-icon icon="mdi:magnify-plus"></iconify-icon>
+          </div>
+        </div> -->
+
+      </div>
+
+      <div class="gallery-footer">
+        <button class="btn-primary" id="btn-show-all">🔍 Lihat Semua Foto</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">✕ Tutup</button>
+    <img src="" alt="Preview" id="lightbox-img"/>
+  </div>
+
+  <footer class="footer">
+    <p>⚔️ &copy; 2026 Game Quest - All Rights Reserved</p>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
