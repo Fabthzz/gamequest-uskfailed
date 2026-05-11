@@ -44,27 +44,27 @@
         <!-- FORM -->
         <div class="contact-form-wrap">
           <h2>Kirim Pesan</h2>
-          <p class="sub">Isi form di bawah ini dan kami akan segera membalasmu!</p>
+          <p class="sub">Isi form di bawah ini kalo ada keperluan / rate aja men</p>
 
-          <form id="contact-form" novalidate>
+          <form id="contact-form" action="https://formspree.io/f/mwvyaprl" method="POST" novalidate>
 
             <div class="form-group">
               <label for="nama">Nama</label>
-              <input type="text" id="nama" name="nama" placeholder="Masukkan nama..."/>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama..." required/>
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="email@contoh.com"/>
+              <input type="email" id="email" name="email" placeholder="email@contoh.com" required/>
             </div>
 
             <div class="form-group">
               <label for="pesan">Pesan</label>
-              <textarea id="pesan" name="pesan" placeholder="Tulis pesan di sini..."></textarea>
+             <textarea id="pesan" name="message" placeholder="Tulis pesan di sini..." required></textarea>
             </div>
 
             <button type="submit" class="btn-primary" style="width:100%;">
-               Kirim Pesan
+                Kirim Pesan
             </button>
 
             <div class="toast" id="toast"></div>
@@ -132,7 +132,7 @@
               <iconify-icon icon="mdi:whatsapp"></iconify-icon>
             </a>
             <a class="social-btn" href="https://x.com/FabSsyz" title="Twitter/X">
-              <iconify-icon icon="mdi:twitter"></iconify-icon>
+              <iconify-icon icon="simple-icons:x"></iconify-icon>
             </a>
             
           </div>
