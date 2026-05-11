@@ -52,7 +52,7 @@ img {
 .navbar {
   background: #d8b4fe;
   border-bottom: var(--border);
-  padding: 1.1rem 2rem;
+  padding: 0.75rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,8 +71,10 @@ img {
 }
 
 .navbar-logo .logo-icon {
-  font-size: 1.6rem;
-  color: var(--purple-dark);
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .navbar-logo span.game {
@@ -216,15 +218,207 @@ img {
    FOOTER
 =========================== */
 
+/* ===========================
+   FOOTER
+=========================== */
+
 .footer {
-  background: #d8b4fe;
-  border-top: var(--border);
-  text-align: center;
-  padding: 1.2rem;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--purple-dark);
+  background: #3b0764;
+  border-top: 3px solid #1a1a1a;
   margin-top: 3rem;
+  color: #e9d5ff;
+  font-size: 0.9rem;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 2.5rem 4rem 2rem;
+  width: 100%;
+  align-items: start;
+}
+
+/* Brand kolom kiri */
+.footer-brand .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+.footer-brand .footer-logo iconify-icon {
+  font-size: 1.6rem;
+  color: #c084fc;
+}
+
+.footer-brand .footer-logo .quest {
+  color: #c084fc;
+}
+
+.footer-brand p {
+  font-size: 0.83rem;
+  color: #c4b5fd;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  max-width: 100%;
+}
+
+/* Sosmed icons */
+.footer-socials {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #581c87;
+  border: 1.5px solid #7e22ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c084fc;
+  font-size: 1.2rem;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  background: #a855f7;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Kolom navigasi & kontak */
+.footer-col h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28px;
+  height: 3px;
+  background: #a855f7;
+  border-radius: 2px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  font-size: 0.83rem;
+  color: #c4b5fd;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.18s, gap 0.18s;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  gap: 10px;
+}
+
+.footer-links a iconify-icon {
+  font-size: 0.9rem;
+}
+
+/* Kontak items */
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+  color: #c4b5fd;
+  line-height: 1.5;
+}
+
+.footer-contact-item iconify-icon {
+  font-size: 1.1rem;
+  color: #a855f7;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Garis pemisah */
+.footer-tagline {
+  font-size: 0.78rem;
+  color: #7c3aed;
+  font-style: italic;
+  margin-top: 1rem;
+  border-left: 3px solid #7e22ce;
+  padding-left: 0.7rem;
+  line-height: 1.5;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #581c87;
+  margin: 0;
+  max-width: 100%;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  padding: 1rem 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  color: #9e7bc4;
+}
+
+.footer-bottom span a {
+  color: #c084fc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-bottom span a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem 1.5rem;
+    gap: 1.8rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: center;
+    padding: 1rem 1.5rem;
+  }
 }
 
 /* ===========================

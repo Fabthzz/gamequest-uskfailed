@@ -204,7 +204,7 @@
   transform: translateY(-1px);
 }
 
-/* ---- EVENT SECTION ---- */
+/* ---- EVENT SECTION ----
 .event-section {
   background: #fff;
   border-radius: 14px;
@@ -304,7 +304,7 @@
 
 .event-timer iconify-icon {
   font-size: 1rem;
-}
+} */
 
 /* ---- REWARD BANNER ---- */
 .reward-banner {

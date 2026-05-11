@@ -1,135 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Game Quest - Misi</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/main.css"/>
-  <link rel="stylesheet" href="css/mission.css"/>
-</head>
-<body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="navbar-logo">
-      <iconify-icon icon="mdi:gamepad-variant" class="logo-icon"></iconify-icon>
-      <span><span class="game">GAME</span> <span class="quest">QUEST</span></span>
-    </div>
-    <button class="navbar-hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <ul class="navbar-menu" id="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="mission.html" class="active">Misi</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- MISSION SECTION -->
-  <section class="mission-section">
-    <div class="mission-container">
-
-      <h1>Misi Tersedia</h1>
-      <div class="mission-underline"></div>
-      <p class="mission-sub">Pilih misi dan buktikan kemampuanmu!</p>
-
-      <!-- FILTER TABS -->
-      <div class="mission-tabs">
-        <button class="tab-btn active" onclick="filterTab(this, 'semua')">Semua</button>
-        <button class="tab-btn" onclick="filterTab(this, 'mudah')">Mudah</button>
-        <button class="tab-btn" onclick="filterTab(this, 'sedang')">Sedang</button>
-        <button class="tab-btn" onclick="filterTab(this, 'sulit')">Sulit</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Quest - Misi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mission.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img src="/assets/bg/icon/download__2_-removebg-preview.png" class="logo-icon" alt="Game Quest Logo">
+        <span
+          ><span class="game">GAME</span> <span class="quest">QUEST</span></span
+        >
       </div>
+      <button class="navbar-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="mission.html" class="active">Misi</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-      <!-- MISSION CARDS -->
-      <div class="mission-grid">
+    <!-- MISSION SECTION -->
+    <section class="mission-section">
+      <div class="mission-container">
+        <h1>Misi Tersedia</h1>
+        <div class="mission-underline"></div>
+        <p class="mission-sub">Pilih misi dan buktikan kemampuanmu!</p>
 
-        <!-- Misi 1 -->
-        <div class="mission-card" data-level="mudah">
-          <div class="mission-img-wrap">
-            <img src="assets/bg/img/slime.jpeg" alt="Slime Invasion"/>
-            <span class="badge badge-mudah">⭐ Mudah</span>
-          </div>
-          <div class="mission-card-body">
-            <h3>Misi 1: Slime Invasion</h3>
-            <p>Kalahkan 10 slime di hutan hijau dan amankan wilayah dari serangan.</p>
-            <div class="mission-meta">
-              <span><iconify-icon icon="mdi:clock-outline"></iconify-icon> 15 menit</span>
-              <span><iconify-icon icon="mdi:coin"></iconify-icon> +50 XP</span>
-              <span><iconify-icon icon="mdi:account-multiple"></iconify-icon> 128 pemain</span>
+        <!-- FILTER TABS -->
+        <div class="mission-tabs">
+          <button class="tab-btn active" onclick="filterTab(this, 'semua')">
+            Semua
+          </button>
+          <button class="tab-btn" onclick="filterTab(this, 'mudah')">
+            Mudah
+          </button>
+          <button class="tab-btn" onclick="filterTab(this, 'sedang')">
+            Sedang
+          </button>
+          <button class="tab-btn" onclick="filterTab(this, 'sulit')">
+            Sulit
+          </button>
+        </div>
+
+        <!-- MISSION CARDS -->
+        <div class="mission-grid">
+          <!-- Misi 1 -->
+          <div class="mission-card" data-level="mudah">
+            <div class="mission-img-wrap">
+              <img src="assets/bg/img/slime.jpeg" alt="Slime Invasion" />
+              <span class="badge badge-mudah">⭐ Mudah</span>
             </div>
-            <div class="mission-progress-wrap">
-              <div class="mission-progress-label">
-                <span>Progress komunitas</span>
-                <span>72%</span>
+            <div class="mission-card-body">
+              <h3>Misi 1: Slime Invasion</h3>
+              <p>
+                Kalahkan 10 slime di hutan hijau dan amankan wilayah dari
+                serangan.
+              </p>
+              <div class="mission-meta">
+                <span
+                  ><iconify-icon icon="mdi:clock-outline"></iconify-icon> 15
+                  menit</span
+                >
+                <span
+                  ><iconify-icon icon="mdi:coin"></iconify-icon> +50 XP</span
+                >
+                <span
+                  ><iconify-icon icon="mdi:account-multiple"></iconify-icon> 128
+                  pemain</span
+                >
               </div>
-              <div class="progress-bar"><div class="progress-fill" style="width:72%"></div></div>
+              <div class="mission-progress-wrap">
+                <div class="mission-progress-label">
+                  <span>Progress komunitas</span>
+                  <span>77%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 77%"></div>
+                </div>
+              </div>
+              <a href="#" class="btn-mission">Lihat Detail</a>
             </div>
-            <a href="#" class="btn-mission">Lihat Detail</a>
+          </div>
+
+          <!-- Misi 2 -->
+          <div class="mission-card" data-level="sedang">
+            <div class="mission-img-wrap">
+              <img src="/assets/bg/img/chest.png" alt="Hidden Treasure" />
+              <span class="badge badge-sedang">⚔️ Sedang</span>
+            </div>
+            <div class="mission-card-body">
+              <h3>Misi 2: Hidden Treasure</h3>
+              <p>
+                Temukan harta karun tersembunyi di goa rahasia pegunungan timur.
+              </p>
+              <div class="mission-meta">
+                <span
+                  ><iconify-icon icon="mdi:clock-outline"></iconify-icon> 30
+                  menit</span
+                >
+                <span
+                  ><iconify-icon icon="mdi:coin"></iconify-icon> +120 XP</span
+                >
+                <span
+                  ><iconify-icon icon="mdi:account-multiple"></iconify-icon> 85
+                  pemain</span
+                >
+              </div>
+              <div class="mission-progress-wrap">
+                <div class="mission-progress-label">
+                  <span>Progress komunitas</span>
+                  <span>66%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 66%"></div>
+                </div>
+              </div>
+              <a href="#" class="btn-mission">Lihat Detail</a>
+            </div>
+          </div>
+
+          <!-- Misi 3 -->
+          <div class="mission-card" data-level="sulit">
+            <div class="mission-img-wrap">
+              <img src="assets/bg/img/boss.png" alt="Boss Battle" />
+              <span class="badge badge-sulit">💀 Sulit</span>
+            </div>
+            <div class="mission-card-body">
+              <h3>Misi 3: Boss Battle</h3>
+              <p>
+                Kalahkan boss legendaris di level 5 dan raih gelar petualang
+                sejati!
+              </p>
+              <div class="mission-meta">
+                <span
+                  ><iconify-icon icon="mdi:clock-outline"></iconify-icon> 60
+                  menit</span
+                >
+                <span
+                  ><iconify-icon icon="mdi:coin"></iconify-icon> +300 XP</span
+                >
+                <span
+                  ><iconify-icon icon="mdi:account-multiple"></iconify-icon> 32
+                  pemain</span
+                >
+              </div>
+              <div class="mission-progress-wrap">
+                <div class="mission-progress-label">
+                  <span>Progress komunitas</span>
+                  <span>9%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 9%"></div>
+                </div>
+              </div>
+              <a href="#" class="btn-mission">Lihat Detail</a>
+            </div>
           </div>
         </div>
 
-        <!-- Misi 2 -->
-        <div class="mission-card" data-level="sedang">
-          <div class="mission-img-wrap">
-            <img src="/assets/bg/img/chest.png" alt="Hidden Treasure"/>
-            <span class="badge badge-sedang">⚔️ Sedang</span>
-          </div>
-          <div class="mission-card-body">
-            <h3>Misi 2: Hidden Treasure</h3>
-            <p>Temukan harta karun tersembunyi di goa rahasia pegunungan timur.</p>
-            <div class="mission-meta">
-              <span><iconify-icon icon="mdi:clock-outline"></iconify-icon> 30 menit</span>
-              <span><iconify-icon icon="mdi:coin"></iconify-icon> +120 XP</span>
-              <span><iconify-icon icon="mdi:account-multiple"></iconify-icon> 85 pemain</span>
-            </div>
-            <div class="mission-progress-wrap">
-              <div class="mission-progress-label">
-                <span>Progress komunitas</span>
-                <span>45%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-fill" style="width:45%"></div></div>
-            </div>
-            <a href="#" class="btn-mission">Lihat Detail</a>
-          </div>
-        </div>
-
-        <!-- Misi 3 -->
-        <div class="mission-card" data-level="sulit">
-          <div class="mission-img-wrap">
-            <img src="assets/bg/img/boss.png" alt="Boss Battle"/>
-            <span class="badge badge-sulit">💀 Sulit</span>
-          </div>
-          <div class="mission-card-body">
-            <h3>Misi 3: Boss Battle</h3>
-            <p>Kalahkan boss legendaris di level 5 dan raih gelar petualang sejati!</p>
-            <div class="mission-meta">
-              <span><iconify-icon icon="mdi:clock-outline"></iconify-icon> 60 menit</span>
-              <span><iconify-icon icon="mdi:coin"></iconify-icon> +300 XP</span>
-              <span><iconify-icon icon="mdi:account-multiple"></iconify-icon> 32 pemain</span>
-            </div>
-            <div class="mission-progress-wrap">
-              <div class="mission-progress-label">
-                <span>Progress komunitas</span>
-                <span>18%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-fill" style="width:18%"></div></div>
-            </div>
-            <a href="#" class="btn-mission">Lihat Detail</a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- MISI EVENT SPESIAL
+        <!-- MISI EVENT SPESIAL
       <div class="event-section">
         <div class="event-header">
           <h2>🔥 Misi Event Spesial</h2>
@@ -174,32 +221,107 @@
         </div>
       </div> -->
 
-      <!-- REWARD BANNER -->
-      <div class="reward-banner">
-        <img src="assets/bg/icon/download-removebg-preview.png" style="height: 65px;">
-        <p>Selesaikan misi harian dan dapatkan reward spesial!</p>
+        <!-- REWARD BANNER -->
+        <div class="reward-banner">
+          <img
+            src="assets/bg/icon/download-removebg-preview.png"
+            style="height: 65px"
+          />
+          <p>Selesaikan misi harian dan dapatkan reward spesial!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+             <img src="/assets/bg/icon/download__2_-removebg-preview.png" style="width: 50px; height: 50px;" alt="Game Quest Logo">
+            <span>GAME <span class="quest">QUEST</span></span>
+          </div>
+          <p>
+            Website petualangan seru untuk para gamer dan petualang yang suka
+            tantangan. Bergabung dan buktikan kemampuanmu!
+          </p>
+          <div class="footer-socials">
+            <a
+              class="social-btn"
+              href="https://www.instagram.com/fbianbrtz/"
+              title="Instagram"
+            >
+              <iconify-icon icon="mdi:instagram"></iconify-icon>
+            </a>
+            <a
+              class="social-btn"
+              href="https://wa.me/6287722281041"
+              title="WhatsApp"
+            >
+              <iconify-icon icon="mdi:whatsapp"></iconify-icon>
+            </a>
+            <a
+              class="social-btn"
+              href="https://x.com/FabSsyz"
+              title="Twitter/X"
+            >
+              <iconify-icon icon="mdi:twitter"></iconify-icon>
+            </a>
+          </div>
+          <p class="footer-tagline">
+            "Setiap petualang besar dimulai dari satu langkah kecil."
+          </p>
+        </div>
+
+        <!-- Kontak -->
+        <div class="footer-col">
+          <h4>Hubungi Kami</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <iconify-icon icon="mdi:email-outline"></iconify-icon>
+              <span>fabssy@gamequest.id</span>
+            </div>
+            <div class="footer-contact-item">
+              <iconify-icon icon="mdi:whatsapp"></iconify-icon>
+              <span>+62 877-2228-1041</span>
+            </div>
+            <div class="footer-contact-item">
+              <iconify-icon icon="mdi:instagram"></iconify-icon>
+              <span>@fbianbrtz</span>
+            </div>
+            <div class="footer-contact-item">
+              <iconify-icon icon="mdi:map-marker-outline"></iconify-icon>
+              <span>Kepulauan Antartika, China</span>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </div>
-  </section>
+      <hr class="footer-divider" />
 
-  <footer class="footer">
-    <p>⚔️ &copy; 2026 Game Quest - All Rights Reserved</p>
-  </footer>
+      <div class="footer-bottom">
+        <span
+          >&copy; 2026 <a href="index.html">Game Quest</a>. All Rights
+          Reserved.</span
+        >
+      </div>
+    </footer>
 
-  <script src="js/navbar.js"></script>
-  <script>
-    function filterTab(btn, level) {
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      document.querySelectorAll('.mission-card').forEach(card => {
-        if (level === 'semua' || card.dataset.level === level) {
-          card.style.display = '';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-  </script>
-</body>
+    <script src="js/navbar.js"></script>
+    <script>
+      function filterTab(btn, level) {
+        document
+          .querySelectorAll(".tab-btn")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        document.querySelectorAll(".mission-card").forEach((card) => {
+          if (level === "semua" || card.dataset.level === level) {
+            card.style.display = "";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </body>
 </html>

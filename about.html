@@ -1,91 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Game Quest - About</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/main.css"/>
-  <link rel="stylesheet" href="css/about.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Quest - About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img src="/assets/bg/icon/download__2_-removebg-preview.png" class="logo-icon" alt="Game Quest Logo">
+        <span
+          ><span class="game">GAME</span> <span class="quest">QUEST</span></span
+        >
+      </div>
+      <button class="navbar-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="mission.html">Misi</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="navbar-logo">
-      <iconify-icon icon="mdi:gamepad-variant" class="logo-icon"></iconify-icon>
-      <span><span class="game">GAME</span> <span class="quest">QUEST</span></span>
-    </div>
-    <button class="navbar-hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <ul class="navbar-menu" id="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="mission.html">Misi</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- ABOUT SECTION -->
+    <section class="about-section">
+      <div class="about-container">
+        <!-- Teks kiri, karakter kanan -->
+        <div class="about-grid">
+          <div class="about-text">
+            <h1>Tentang Game Quest 👾</h1>
+            <div class="about-underline"></div>
+            <p>
+              Game Quest adalah website petualangan yang dibuat untuk para gamer
+              dan petualangan yang suka tantangan.
+            </p>
+            <p>
+              Di sini, kamu bisa menemukan berbagai misi seru, mendapatkan
+              reward, dan menjadi petualanagan terbaik!
+            </p>
+          </div>
 
-  <!-- ABOUT SECTION -->
-  <section class="about-section">
-    <div class="about-container">
+          <div class="about-character">
+            <img
+              src="/assets/bg/icon/Gengar-removebg-preview.png"
+              alt="Gengar"
+            />
+          </div>
+        </div>
 
-      <!-- Teks kiri, karakter kanan -->
-      <div class="about-grid">
-        <div class="about-text">
-          <h1>Tentang Game Quest</h1>
-          <div class="about-underline"></div>
+        <!-- STATS BAR -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <iconify-icon
+              icon="mdi:gamepad-variant"
+              class="stat-icon"
+            ></iconify-icon>
+            <div class="stat-num">200+</div>
+            <div class="stat-label">Misi Tersedia</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <iconify-icon
+              icon="mdi:account-group"
+              class="stat-icon"
+            ></iconify-icon>
+            <div class="stat-num">500+</div>
+            <div class="stat-label">Petualangan Aktif</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <iconify-icon icon="mdi:star" class="stat-icon"></iconify-icon>
+            <div class="stat-num">50+</div>
+            <div class="stat-label">Reward Menarik</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="/assets/bg/icon/download__2_-removebg-preview.png" style="width: 50px; height: 50px;" alt="Game Quest Logo">
+            <span>GAME <span class="quest">QUEST</span></span>
+          </div>
           <p>
-            Game Quest adalah website petualangan yang dibuat untuk para gamer dan petualangan yang suka tantangan.
+            Website petualangan seru untuk para gamer dan petualang yang suka
+            tantangan. Bergabung dan buktikan kemampuanmu!
           </p>
-          <p>
-            Di sini, kamu bisa menemukan berbagai misi seru, mendapatkan reward, dan menjadi petualanagan terbaik!
+          <div class="footer-socials">
+            <a
+              class="social-btn"
+              href="https://www.instagram.com/fbianbrtz/"
+              title="Instagram"
+            >
+              <iconify-icon icon="mdi:instagram"></iconify-icon>
+            </a>
+            <a
+              class="social-btn"
+              href="https://wa.me/6287722281041"
+              title="WhatsApp"
+            >
+              <iconify-icon icon="mdi:whatsapp"></iconify-icon>
+            </a>
+            <a
+              class="social-btn"
+              href="https://x.com/FabSsyz"
+              title="Twitter/X"
+            >
+              <iconify-icon icon="mdi:twitter"></iconify-icon>
+            </a>
+          </div>
+          <p class="footer-tagline">
+            "Setiap petualang besar dimulai dari satu langkah kecil."
           </p>
         </div>
 
-        <div class="about-character">
-          <img
-            src="/assets/bg/icon/Gengar-removebg-preview.png"
-            alt="Gengar"
-          />
+        <!-- Kontak -->
+        <div class="footer-col">
+          <h4>Hubungi Kami</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <iconify-icon icon="mdi:email-outline"></iconify-icon>
+              <span>fabssy@gamequest.id</span>
+            </div>
+            <div class="footer-contact-item">
+              <iconify-icon icon="mdi:whatsapp"></iconify-icon>
+              <span>+62 877-2228-1041</span>
+            </div>
+            <div class="footer-contact-item">
+              <iconify-icon icon="mdi:instagram"></iconify-icon>
+              <span>@fbianbrtz</span>
+            </div>
+            <div class="footer-contact-item">
+              <iconify-icon icon="mdi:map-marker-outline"></iconify-icon>
+              <span>Kepulauan Antartika, China</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- STATS BAR -->
-      <div class="stats-bar">
-        <div class="stat-item">
-          <iconify-icon icon="mdi:gamepad-variant" class="stat-icon"></iconify-icon>
-          <div class="stat-num">200+</div>
-          <div class="stat-label">Misi Tersedia</div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <iconify-icon icon="mdi:account-group" class="stat-icon"></iconify-icon>
-          <div class="stat-num">500+</div>
-          <div class="stat-label">Petualangan Aktif</div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <iconify-icon icon="mdi:star" class="stat-icon"></iconify-icon>
-          <div class="stat-num">50+</div>
-          <div class="stat-label">Reward Menarik</div>
-        </div>
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <span
+          >&copy; 2026 <a href="index.html">Game Quest</a>. All Rights
+          Reserved.</span
+        >
       </div>
+    </footer>
 
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>⚔️ &copy; 2026 Game Quest - All Rights Reserved</p>
-  </footer>
-
-  <script src="js/navbar.js"></script>
-</body>
+    <script src="js/navbar.js"></script>
+  </body>
 </html>
