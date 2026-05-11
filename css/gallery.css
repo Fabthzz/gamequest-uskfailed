@@ -123,3 +123,72 @@
     aspect-ratio: 1/1;
   }
 }
+
+/* COMING SOON MODAL */
+.cs-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+}
+
+.cs-overlay.open {
+  display: flex;
+}
+
+.cs-modal {
+  background: #fff;
+  border: 2px solid #1a1a1a;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 #1a1a1a;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  max-width: 340px;
+  width: 90%;
+  animation: popIn 0.2s ease;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.cs-icon {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.cs-modal h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.cs-modal p {
+  font-size: 0.88rem;
+  color: #6b21a8;
+  line-height: 1.6;
+  margin-bottom: 1.3rem;
+}
+
+.btn-cs {
+  background: #7e22ce;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 22px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-cs:hover {
+  background: #6b21a8;
+}

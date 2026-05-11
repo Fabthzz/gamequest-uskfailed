@@ -106,8 +106,13 @@
   }
  
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    color: #fff;
   }
+
+  .hero-content p {
+    color: #fff;
+  } 
 }
  
 @media (max-width: 768px) {
@@ -118,7 +123,7 @@
   }
  
   .hero-bg {
-    background-position: 75% center;
+    background-position: 88%  center;
   }
  
   .hero-overlay {
